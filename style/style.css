@@ -1,40 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Wet+Paint&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&family=Rubik+Wet+Paint&family=Unlock&display=swap');
-*{
+
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", serif;
     color: white;
 }
 
-.contine_card{
-    background-image: url(../imgs/messi.jpg);
+.contine_card {
+    background-image: url(../imgs/stadium-dimensions.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
     /* filter: blur(1px); */
     line-height: 10px;
+
 }
-.continer-text{
-   display: flex;
-   flex-direction: column;
-   padding: 200px;
+
+.continer-text {
+    display: flex;
+    flex-direction: column;
+    padding: 200px;
 }
-.contine_card h1{
+
+.contine_card h1 {
     font-family: "Rubik Wet Paint", system-ui;
     font-size: 50px;
     font-weight: 900;
 }
-.contine_card h2{
+
+.contine_card h2 {
     font-family: "Rowdies", sans-serif;
 }
-.contine_card span{
+
+.contine_card span {
     color: cornflowerblue;
 }
 
@@ -51,6 +57,7 @@ body{
     width: 100%;
     height: auto;
 }
+
 /* 
 .card-content {
     padding: 20px;
@@ -67,35 +74,40 @@ body{
     color: #f9f7f7;
 }
 
-.card-content{
+.continer_img,
+.continer_im {
     border: 2px solid white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   width: 20%;
-   height: 55vh;
-background-image: url(../imgs/Lionel.jpg);
-   text-align: center;
-   line-height: 20px;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   border-radius: 10px;
+    width: 20%;
+    height: 55vh;
+    border-radius: 10px;
+    position: absolute;
+    background: url(../imgs/Lionel.jpg);
+    background-position: center;
+    background-size: cover;
+
 }
-.card-content img{
-    width: 112%;
-    position: relative;
-    height: 30vh;
-  
-}
-.continer_img{
-color: white;
+.continer_im {
+    background-image: url(../imgs/ronaldo.jpg);
 }
 
-.card-content h2 {
-    font-size: 24px;
-    margin: 0;
-    font-family: "Rubik Wet Paint", system-ui;
-  font-size: 30px;
+.continer_img h2 {
+    color: red;
+text-align: center;
+font-size: 30px;
+}
+
+.active  {
+    z-index: 100;
+
+}
+#continer{
+    display: flex;
+    justify-content: center;
+    margin: 0 70px;
+    margin-bottom: 100px;
+    align-items: center;
 }
