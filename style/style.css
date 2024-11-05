@@ -19,55 +19,11 @@ body {
     background-size: cover;
     width: 100%;
     height: 100vh;
-    /* filter: blur(1px); */
+
     line-height: 10px;
 
 }
 
-.continer-text {
-    display: flex;
-    flex-direction: column;
-    padding: 200px;
-}
-
-.contine_card h1 {
-    font-family: "Rubik Wet Paint", system-ui;
-    font-size: 50px;
-    font-weight: 900;
-}
-
-.contine_card h2 {
-    font-family: "Rowdies", sans-serif;
-}
-
-.contine_card span {
-    color: cornflowerblue;
-}
-
-.card {
-    width: 300px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    font-family: Arial, sans-serif;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-/* 
-.card-content {
-    padding: 20px;
-}
-
-
-.card-content p {
-    margin: 10px 0;
-    color: #555;
-} */
 
 .card-content .highlight {
     font-weight: bold;
@@ -78,36 +34,124 @@ body {
 .continer_im {
     border: 2px solid white;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 20%;
     height: 55vh;
     border-radius: 10px;
     position: absolute;
-    background: url(../imgs/Lionel.jpg);
     background-position: center;
     background-size: cover;
-
-}
-.continer_im {
-    background-image: url(../imgs/ronaldo.jpg);
-}
-
-.continer_img h2 {
-    color: red;
-text-align: center;
-font-size: 30px;
+    background-image: url("../imgs/bono.jpg");
+    top: 20%;
+    transition: transform 0.5s ease;
+  
 }
 
-.active  {
+
+.continer_im h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Rubik Wet Paint", system-ui;
+
+}
+
+.active {
     z-index: 100;
 
 }
-#continer{
+
+#continer {
     display: flex;
     justify-content: center;
-    margin: 0 70px;
-    margin-bottom: 100px;
-    align-items: center;
+
+
+
+}
+
+.continer_img i {
+    font-size: 50px;
+    position: relative;
+    bottom: -100px;
+    /* margin: 0 300px; */
+    color: white;
+}
+
+.dislike {
+    float: left;
+
+
+}
+
+.like {
+
+    float: right;
+}
+
+.like:hover {
+    color: blue;
+}
+
+.dislike:hover {
+    color: red;
+
+}
+.img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+   transition:all 2s;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    top: -180px;
+    filter: grayscale(80%);
+   
+}
+.img img:hover{
+  
+   width: 140px;
+}
+
+#total{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+   gap: 30px;
+}
+#total img{
+    width: 250px;
+    height: 250px;
+
+}
+
+
+
+.image-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-card img {
+    width: 100%;
+    height: 200px;
+}
+.total{
+    font-size: 30px;
+    margin: 50px 0;
+    color: black;
+    text-align: center;
+}
+
+#continer-total{
+   display: none;
+   position: absolute;
+   top: 0;
 }
